@@ -1,0 +1,47 @@
+<!-- THis is a continuation from 6th page with a new form example -->
+<!-- Lectures 34 - 36 -->
+<!-- Label tag - THis is used to give each form control a nice description next to it-->
+<!-- Rather then embedding the input tag within the label tag as in the 1st example we
+can use the for and id attributes to connect them separately -->
+<!-- Form validations - Example is checking > 10 characters for passwords -->
+<!-- In html its simple validations we can do by using the required attribute
+The required attribute is a boolean one so its automaticall true when specified -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <!-- 1st exampled -->
+  <!-- <form>
+    <label>
+      Username:
+          <input type="text" name="username" placeholder="username">
+    </label>
+
+    <label>
+      <input type="text" name="password" placeholder="password">
+      <button>Submit</button>
+    </label>
+
+
+  </form> -->
+
+  <!-- 2nd example -->
+
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" name="username" placeholder="username" id="username" required>
+    <label for="password">Password</label>
+    <input type="text" name="password" placeholder="password" id="password">
+    <button>Submit</button>
+  </form>
+
+
+
+
+</html>

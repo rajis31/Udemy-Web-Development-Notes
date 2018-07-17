@@ -1,0 +1,41 @@
+<!-- Lecture 50: Inheritacnce and Specifivity -->
+<!-- Inheritacnce is that if you format the parent element then the child elements will get formatted too in css -->
+<!-- Specificity means that we can have multiple styles targetting one element so CSS has to decide which style wins by selecting
+the element that is closest if not the same as the element being targeted. THis is based on a proximity calcualation based on weigghts -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+  body{
+    color:red;
+  }
+    ul {
+      color: purple;
+    }
+    li{
+      color:orange;
+    }
+    .highlight{
+      color:green;
+    }
+    #special{
+      color:blue;
+    }
+  </style>
+</head>
+
+<body>
+  <p>HELLO!</p>
+  <ul>
+    <li id="special" class="highlight">John</li>
+    <li>Paul</li>
+    <li>George</li>
+    <li>Ringo</li>
+  </ul>
+
+</body>
+
+</html>

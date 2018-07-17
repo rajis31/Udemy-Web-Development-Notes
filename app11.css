@@ -1,0 +1,13 @@
+body{
+  background: orange;
+}
+li{
+  border: 5px red solid;
+}
+#third{
+    background-color: yellow;
+    font-size: 40px;
+}
+.complete{
+  text-decoration: line-through;
+}

@@ -1,0 +1,59 @@
+<!-- Merge this with my files on latop later today -->
+<!-- Lecture 73-74 - Bootstrap -->
+<!-- Take out the boostrap.css files out of  bootstrap folder -->
+<!-- We can also link to the boostrap.css online. THe website has the link -->
+<!-- Can start calling different elements from bootstrap and seeing how they format -->
+<!-- Form-Control and Form-Group are 2 important form classes in bootstrap -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootrap Basics</title>
+  <link rel="stylesheet" href="bootstrap.css">
+
+  <!-- Here we can override bootstrap formatting -->
+  <style type="text/css">
+    .btn-danger {
+      background-color: orange;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Bootstrap Basics</h1>
+  <button class="btn btn-success btn-xs">CLICK HERE</button>
+  <button class="btn btn-success btn-xs active">CLICK HERE</button>
+  <button class="btn btn-danger btn-xs" disabled="disabled">CLICK HERE</button>
+  <!--Disabled button -->
+  <a href="https://www.google.com" class="btn btn-info btn-lg">Google homepage</a>
+  <div class="container"><!-- Use the container class to format block elements -->
+    <div class="jumbotron">
+      <h1>This is a jumbotron class</h1>
+      <p>Ths is some gibberish text</p>
+      <button class="btn btn-success btn-lg">Click here</button>
+      <!-- By default goes across the entire screen -->
+    </div>
+  </div>
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+</body>
+
+</html>

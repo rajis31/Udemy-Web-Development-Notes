@@ -1,0 +1,35 @@
+p{
+  font-family: Arial;
+}
+h1{
+  font-family: Indie Flower;
+}
+body{
+  font-size: 10px;
+}
+h1{
+  font-size: 100px;
+}
+span{
+  font-size: 2em; /*This is double size to parent */
+}
+p{
+  font-size: 2em;
+}
+h1{
+  /*font-weight: bold;*/
+  font-weight: 500;
+}
+p{
+  line-height: 2;
+}
+
+h1{
+  text-align: right;
+}
+p{
+  text-align: center;
+}
+p{
+  text-decoration: underline;
+}

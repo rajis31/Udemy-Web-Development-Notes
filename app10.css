@@ -1,0 +1,22 @@
+/* stylesheet for 10th apge.html */
+
+h1 {
+  color: rgba(0, 200, 100, 0.8); /*Color of font */
+  border-color: purple;
+  border-width: 5px;/*width of border lines*/
+  border-style: solid; /*There are few options like solid, dotted, etc */
+  /*we can also write the border as rather then above by setting properties altogether*/
+  border: 10px dashed  purple;
+}
+
+h4 {
+  background: rgb(255, 100, 80);
+}
+
+body{
+  /*background: rgb(200,150,150);*/
+  background: pink;
+  /* background: url("https://www.publicdomainpictures.net/pictures/190000/velka/wood-background-02.jpg");/*This is to place image as background*/
+  /*background-repeat: no-repeat;/*This repeats the image across backgroud */
+  /*background-size: cover; /*This is to get the image to cover entire background */ */
+}

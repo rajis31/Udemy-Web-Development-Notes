@@ -1,0 +1,16 @@
+img{
+  width: 30%;
+  float: left;
+  margin: 1.66%/*To get the 1.66% each pic takes 30% so a total of 90% per row. So 10/6 margins=1.66% as each pic has a margin on each side
+  so 2*3=6 margins per row */
+}
+p{
+  font-family: Raleway;
+  margin-left: 1.66%;
+  font-size: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom:2px solid #f1f1f1;
+  padding-bottom: 20px;
+  width: 30%;
+}

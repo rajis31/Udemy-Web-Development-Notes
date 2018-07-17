@@ -1,0 +1,48 @@
+<!-- Lec 49 - More advanced selectors -->
+<!-- We already went over Elements, Class, and ID selectors. This will cover
+              1. Star
+              2. Descendent selectors
+              3. Adjacent selectors
+              4. Attrbute selectors
+              5. nth of types
+
+For mre info checkout https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+  -->
+  <!-- * selector will select all elements on a page -->
+  <!-- Descendent selectors will select all elements inside of a tag. To specify this in css use
+  tag1 tag2/class...tagn/class {} which will mean select all tag n's/classes within tag 1 to tag n-1 and format it -->
+<!-- Adjacent selector - This usings a + symbol in the css sheet. It basicaly matches the second element only if it follows
+the element before it and both are siblings belonging to the same parent element -->
+<!-- Attrbute selector - uses tag[attribute="value"] to pick which attributes to change -->
+<!-- nth of type - This will select nth of every element like every 3rd div element in a group-->
+
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="app12.css">
+  </head>
+  <body>
+  <h1>Selector Demo</h1>
+  <a href="http://wwww.google.com"> Click me for google</a>
+  <ul>
+    <li>Apples</li>
+    <li>Oranges</li>
+    <li>Bananas</li>
+  </ul>
+
+<h4>Popular Sites</h4>
+<ul>
+  <li>Carrots</li>
+  <li>Peas</li>
+  <li>Asparagus</li>
+</ul>
+<h4>Popular Sites</h4>
+<ul>
+  <li><a href="https://www.google.com">Google</a></li>
+  <li><a href="https://www.facebook.com">Facebook</a></li>
+  <li><a href="https://wwww.reddit.com">Reddit</a></li>
+</ul>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!-- Lecture 37-38 on forms-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>Register</h1>
+  <form>
+    <label for="First Name">First Name:</label>
+    <input type="text" id="First Name" placeholder="John" required>
+    <label for="Last Name">Last Name:</label>
+    <input type="text" id="Last Name"placeholder="Doe" required>
+    <br>
+    <label for="gender">Male:</label>
+    <input type="radio" name="gender" value="Male">
+    <label for="gender">Female:</label>
+    <input type="radio" name="gender" value="Female">
+    <label for="gender">Other:</label>
+    <input type="radio" name="gender" value="Other">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email"required>
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="password" required placeholder="Password">
+    <br>
+
+    <label for="birth">birthday</label>
+    <select class="birth" name="month" required>
+    <option value="" disabled selected>month</option>
+    <option value=1>1</option>
+    <option value=2>2</option>
+    <option value=3>3</option>
+  </select>
+    <select class="birth" name="day" required>
+    <option value="" disabled selected>day</option>
+    <option value=1>1</option>
+    <option value=2>2</option>
+    <option value=3>3</option>
+  </select>
+    <select class="birth" name="year" required>
+    <option value="" disabled selected>year</option>
+    <option value=1>2012</option>
+    <option value=2>2013</option>
+    <option value=3>2014</option>
+  </select>
+
+
+    <br>
+    <label for="agree">I agree to the terms and conditions</label>
+    <input type="checkbox" id="agree" name="agree" value="yes" required>
+
+    <br>
+  <input type="submit">
+  </form>
+
+
+
+</body>
+
+</html>

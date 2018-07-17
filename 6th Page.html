@@ -1,0 +1,35 @@
+<!-- Lecture 31-33  This will go over the forms -->
+<!-- FOrm tag is just a containter -->
+<!-- Form Tag syntax <form action="/my-form-submitting-page method="post">
+                    - Input fields go in here
+                  </form> -->
+<!-- where action = url to send the form data to
+      and  method = the type of HTTP request -->
+<!-- A get request is for retrieving data and a post request is sending data -->
+
+<!-- Input tag - This creates interactive controls specified by the type attribute to speciify the type of input.  -->
+<!-- Input tag syntax is <input type="text"> , <input type="date"> etc which will give different controls-->
+<!-- 1. attribute for input tag  is the placeholder which places temporary text
+in the control -->
+<!-- 2. name attribute for input tag- This is where you give the name of the data field. WHen the form is
+submitted the data fields will show up in the url -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Sign In</h1>
+
+    <form action="/sign-in-url" method="post">
+      <input type="text" placeholder="username">
+      <input type="password" placeholder="password">
+      <button>Login</button>
+    </form>
+  </body>
+</html>

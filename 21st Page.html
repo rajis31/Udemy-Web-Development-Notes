@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap Navbars</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <!-- We put the container inside the nav bar or else the nav bar would shrink if all of it was in the contaiter div-->
+    <div class="container">
+      <div class="navbar-header">
+        <!-- data-target attribute takes the id of the element you want to target which in this case its the div below -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span> <!--These are to make the line streaks on the hamburger icon which shows when window is shrunk-->
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+	      </button>
+        <a href="#" class="navbar-brand">Coffee</a>
+      </div>
+      <!-- What the collapse navbar-collpase does is it hides the items in the navbar as the IE window is shrunk -->
+
+      <!-- Anything outside the collapse div will not show up in the hamburger bar -->
+      <ul class="nav navbar-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="collapse navbar-collapse" id="bs-nav-demo">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </nav>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!-- LEcture 77-78 - THis will cover the bootstrap grid matrix -->
+<!-- Every container scales up to 12 equal sized columns -->
+<!-- All grids need to be placed within a cotainer -->
+<!-- Here we are going to split the 12 avaible columns in half among two divs im 1st row -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <style type="text/css">
+    .pink {
+      background-color: pink;
+      border: 1px solid purple;
+    }
+    .orange{
+      background-color: orange;
+      border: 1px dashed purple;
+      height: 50px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- <div class="row">
+
+      <div class="pink col-lg-6">COL LG 6</div>
+      <div class="pink col-lg-6">COL LG 6</div>
+
+    </div> -->
+    <div class="row">
+      <!-- Ensure the columns total up to 12 in each row which is indicated after the last dash in class or it will spill over to next row -->
+      <!-- Here we are now saying as the IE shrinks and goes from the large to medium size length ensure its still 3 units for each div -->
+      <!-- That is as you shrink the window each div goes from 25% to 25% to 100% of row length -->
+
+      <div class="pink col-lg-3 col-md-3 col-sm-6">
+        <div class="row">
+          <!-- Here we are nesting 2 divs within the outer div where each takes 50% space w/in outer div-->
+          <div class="col-lg-6 orange">Nested col-lg-6</div>
+          <div class="col-lg-6  orange">Nested col-lg-6</div>
+        </div>
+      </div>
+      <div class="pink col-lg-3 col-md-3 col-sm-6">Tour date!</div>
+      <div class="pink col-lg-3 col-md-3 col-sm-6">Tour date!</div>
+      <div class="pink col-lg-3 col-md-3 col-sm-6">Tour date!</div>
+    </div>
+  </div>
+</body>
+
+</html>

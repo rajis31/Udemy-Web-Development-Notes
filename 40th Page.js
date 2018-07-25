@@ -23,3 +23,10 @@ var tags=document.querySelector("#highlight");
 console.log(tags);
 
 //5. document.querySelectorAll() returns all matches
+
+
+//Exercises come up with 4 fdifferent ways to select 1st p tag
+//1. document.getElementById("first");
+//2. document.querySelector("special");
+//3. document.getElementsByTagName("p")[0];
+//4. document.getElementsByClassName("special")[0];

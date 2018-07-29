@@ -1,0 +1,72 @@
+body {
+  background-color: #232323;
+  margin: 0;
+  font-family: "Montserrat", "Avenir";
+}
+
+.square {
+  /*bring about the pruple squares*/
+  width: 30%;
+  background: purple;
+  padding-bottom: 30%;
+  float: right;
+  margin: 1.66%;
+  border-radius: 15%;
+  transition: background 0.6s;
+}
+
+#container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#colorDisplay {
+  font-size: 200%;
+}
+
+h1 {
+  color: white;
+  line-height: 1.1;
+  font-weight: normal;
+  text-align: center;
+  background-color: steelblue;
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#stripe {
+  background: white;
+  height: 30px;
+  text-align: center;
+  color: black;
+}
+#message{
+  display: inline-block;
+  width: 20%; /* Create the inline space between the buttons*/
+}
+
+.selected {
+  background: steelblue;
+}
+
+Button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color:steelblue;
+  letter-spacing: 1px;
+  font-size: inherit; /*inherits the default */
+  transition: 2.0s; /*gives the slow transform when btns are hovered over */
+}
+
+button:hover{
+  color: white;
+  background-color: steelblue;
+}

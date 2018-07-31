@@ -1,11 +1,6 @@
 //Lectures 168=176 Color Game App
-// var colors = ["rgb(255, 0, 0)",
-//   "rgb(255, 255, 0)",
-//   "rgb(0, 255, 0)",
-//   "rgb(0, 255, 255)",
-//   "rgb(0, 0, 255)", //Needs spaces to compare properly
-//   "rgb(255, 0, 255)"
-// ]
+
+//Refactor this later.
 var num_of_squares = 6;
 var colors = generateRandomColors(num_of_squares); //return a list of random colors
 
@@ -57,18 +52,16 @@ hardBtn.addEventListener("click", function() {
 resetButton.addEventListener("click", function() {
   //generate all new colors
   colors = generateRandomColors(num_of_squares);
-  console.log(colors);
   //pick a new random color from array
   pickedColor = colors[pickColor()];
-  //change rgb textContent
+  //change rgb textContent and reset message text
   colorDisplay.textContent = pickedColor;
+  messageDisplay.textContent = "";
   //change colors of quares
   changedColors(colors);
   //reset colorDisplay
   h1.style.backgroundColor = "steelblue";
 });
-
-
 
 
 for (var i = 0; i < colors.length; i++) {
@@ -124,6 +117,4 @@ function randomColor() {
   var g = Math.floor(Math.random() * 256);
   var b = Math.floor(Math.random() * 256);
   return ("rgb(" + r + ", " + g + ", " + b + ")");
-
-
 }

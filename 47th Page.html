@@ -1,0 +1,57 @@
+<!-- Lecture 177-185 JQuery is a DOM manipulation library. -->
+<!-- Why user not use JQuery?
+1. fixes broken DOM api
+2. Brevity and clear to user
+3. anything can be done in js
+4. performance
+5. lotz of peopole moving away from JQuery-->
+<!-- Add jQuery locally or through the website in the script tag -->
+
+<!-- To select with jQuery use $("selector goes here") -->
+<!-- Example $(.class) will select all classes  or $("li a")-->
+
+<!-- You use .css() function to apply new styles.
+Example 1
+$("h1").css("color","yellow")
+
+Example 2 - passing in styles via css object
+
+var styles={
+    color:"white";
+    background: "pink";
+}
+$("h1").css(styles) -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <h1>jQuery Demo</h1>
+  <ul>
+    <li>first <a href="google.com">Google</a></li>
+    <li>second</li>
+    <li>Third</li>
+  </ul>
+  <div>Div 1</div>
+  <div class="highlight">Div 2</div>
+  <div class="highlight"Div 2></div>
+  <div id="third">Div 3</div>
+  <div class="highlight">Div 4</div>
+
+
+  <script>
+    $("div").css("background","purple");
+    $(".highlight").css("width","200px");
+    $("#third").css("border","5px orange solid");
+    $("div:first").css("color","pink");
+  </script>
+
+</body>
+
+</html>

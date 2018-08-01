@@ -1,0 +1,10 @@
+#container{
+  width: 360px;
+  margin: 0px  auto; /* Center and auto fit the div container */
+  border: 2px solid black;
+}
+
+.completed{
+    color:gray;
+    text-decoration:line-through;
+}

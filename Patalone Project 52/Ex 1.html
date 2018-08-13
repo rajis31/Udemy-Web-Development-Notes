@@ -1,0 +1,30 @@
+<!-- Lecture 206 Exercise -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ex 1</title>
+    <script type="text/javascript" src="paper-full.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+          for(var i=0; i<=1000;i+=100)
+          {
+            for(var y=0; y<1000;y+=100){
+              var myCircle = new Path.Circle(new Point(i, y), 10);
+              myCircle.fillColor = 'Purple';
+            }
+
+          }
+
+
+
+    </script>
+    <link rel="stylesheet" href="circles.css">
+
+  </head>
+  <body>
+
+
+  <canvas id="myCanvas" resize></canvas>
+
+  </body>
+</html>

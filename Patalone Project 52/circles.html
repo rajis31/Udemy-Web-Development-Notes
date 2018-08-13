@@ -1,0 +1,26 @@
+<!-- Lectures 205-211 -->
+<!-- Canvas Tag - This is an html element that can be used to draw graphics via scripting in JS which is what Paper js uses-->
+<!-- We will continue this later from lecture 207 -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Circles</title>
+  <script type="text/javascript" src="paper-full.js"></script>
+  <script type="text/paperscript" canvas="myCanvas"> //You create a PaperScript script here
+   function onKeyDown(event) {
+   new Path.Circle(new Point(100,100),10).fillColor="orange";
+   console.log(view.size.height);
+   console.log(view.size.width);
+
+ }
+ //document.querySelector("div").addEventListener()
+</script>
+  <link rel="stylesheet" href="circles.css">
+</head>
+
+<body>
+  <canvas id="myCanvas" resize></canvas>
+</body>
+
+</html>

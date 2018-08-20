@@ -1,0 +1,44 @@
+Lecture 212 Backend basics
+1. When submitting an url, te right address needs to be found
+2. The query is submitted to the ISP , your ISP then takes the DNS and turns it into an IP address
+3.  The website server then responds  and figures out what yo0u are asking for
+4. The server builds the right content and then sent back to my computer as a http response
+5. The browser renders the page.
+
+Static vs Dynamic Webpages
+1. Static - This is all the xamples we written so far
+2. Dynamic - These are webpages that are compiled on the server where the server is pulling together and making the webpag b4 its sent back
+
+
+Developers use the general stack like python, sql, etc for backend and turn that into html, css, JS backbone
+
+lecture 213 - HTTP Requests
+Request Response Cycle -
+Use postman extension for developers to understand how http Requests are working and debug something
+Goes over query string
+
+Lecture 220-224 - Command Line basics
+Already installed mongodb and node,js
+Use pwershell to start node.js by typing node
+
+Commands
+ls - stands for list and lists all folders in current folder
+cd - change directory
+mkdir - make new folder
+New-item 0 make new file
+rm - remove file or folder
+
+
+Lecture 225 - What is node?
+Node -  Its a way to write JS on the backend or server side
+Node is better then PHP since you can use javascript rather then learning PHP language
+
+Lecture 226 - Node
+Type node in console to start but wont be using much
+How to run a file in Node?
+Type node <filename> in console
+
+Lecture 229-231 - NPM
+- Package manager
+use npm install <package name> to install packages
+use var pkg=require("<packagename>"); to import package into js file
